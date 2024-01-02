@@ -30,6 +30,7 @@ func main() {
 	insctructions, err := parseInsctructions(input)
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
 
 	count := part1(insctructions)
