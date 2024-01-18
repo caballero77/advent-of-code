@@ -9,11 +9,11 @@ import (
 var input string
 
 func main() {
-	count := part1(input)
-	fmt.Printf("Part 1: %s\n", count)
+	next := part1(input)
+	fmt.Printf("Part 1: %s\n", next)
 
-	// count = part2(input)
-	// fmt.Printf("Part 1: %d\n", count)
+	next = part1(next)
+	fmt.Printf("Part 2: %s\n", next)
 }
 
 func part1(input string) string {
