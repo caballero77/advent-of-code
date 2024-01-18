@@ -21,7 +21,7 @@ func TestPart1(t *testing.T) {
 
 	for _, test := range tests {
 		if actual := part1(test.Json); actual != test.ExpectedSum {
-			t.Errorf("Output for password: \"%s\" is %d when expected to be %d", test.Json, actual, test.ExpectedSum)
+			t.Errorf("Output for json: \"%s\" is %d when expected to be %d", test.Json, actual, test.ExpectedSum)
 		}
 	}
 }
@@ -43,7 +43,7 @@ func TestPart2(t *testing.T) {
 
 	for _, test := range tests {
 		if actual := part2(test.Json); actual != test.ExpectedSum {
-			t.Errorf("Output for password: \"%s\" is %d when expected to be %d", test.Json, actual, test.ExpectedSum)
+			t.Errorf("Output for json: \"%s\" is %d when expected to be %d", test.Json, actual, test.ExpectedSum)
 		}
 	}
 }
